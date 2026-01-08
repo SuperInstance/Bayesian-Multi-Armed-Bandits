@@ -1,0 +1,56 @@
+{
+  "name": "@superinstance/bayesian-multi-armed-bandits",
+  "version": "1.0.0",
+  "description": "Bayesian multi-armed bandit algorithms for A/B testing and optimization",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
+  "keywords": [
+    "multi-armed-bandit",
+    "a-b-testing",
+    "bayesian",
+    "thompson-sampling",
+    "ucb",
+    "experimentation",
+    "optimization",
+    "statistics",
+    "machine-learning"
+  ],
+  "author": "SuperInstance",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits/issues"
+  },
+  "homepage": "https://github.com/SuperInstance/Bayesian-Multi-Armed-Bandits#readme",
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
